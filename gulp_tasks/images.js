@@ -7,46 +7,46 @@ const sharp = require("sharp");
 // specify transforms
 const transforms = [
   {
-    src: "./src/assets/img/blog/*",
-    dist: "./dist/assets/img/blog/1200x675/",
+    src: "./src/assets/uploads/*",
+    dist: "./dist/assets/uploads/1200x675/",
     options: {
       width: 1200,
       height: 675,
-      fit: "cover"
-    }
+      fit: "cover",
+    },
   },
   {
-    src: "./src/assets/img/blog/*",
-    dist: "./dist/assets/img/blog/1024x576/",
+    src: "./src/assets/uploads/*",
+    dist: "./dist/assets/uploads/1024x576/",
     options: {
       width: 1024,
       height: 576,
-      fit: "cover"
-    }
+      fit: "cover",
+    },
   },
   {
-    src: "./src/assets/img/blog/*",
-    dist: "./dist/assets/img/blog/800x450/",
+    src: "./src/assets/uploads/*",
+    dist: "./dist/assets/uploads/800x450/",
     options: {
       width: 800,
       height: 450,
-      fit: "cover"
-    }
+      fit: "cover",
+    },
   },
   {
-    src: "./src/assets/img/blog/*",
-    dist: "./dist/assets/img/blog/600x600/",
+    src: "./src/assets/uploads/*",
+    dist: "./dist/assets/uploads/600x600/",
     options: {
       width: 600,
       height: 600,
-      fit: "cover"
-    }
-  }
+      fit: "cover",
+    },
+  },
 ];
 
 // Create resized images
 function generateThumbnails(done) {
-  transforms.forEach(function(transform) {
+  transforms.forEach(function (transform) {
     // if folder does not exist create it with all parent folders
     if (!fs.existsSync(transform.dist)) {
       fs.mkdirSync(transform.dist, { recursive: true }, (err) => {
@@ -58,7 +58,7 @@ function generateThumbnails(done) {
     let files = glob.sync(transform.src);
 
     // for each file, apply transforms and save to file
-    files.forEach(function(file) {
+    files.forEach(function (file) {
       let filename = path.basename(file);
       sharp(file)
         .resize(transform.options)
@@ -72,5 +72,5 @@ function generateThumbnails(done) {
 }
 
 module.exports = {
-  thumbnails: generateThumbnails
+  thumbnails: generateThumbnails,
 };
