@@ -1,7 +1,7 @@
 const moment = require("moment");
 const now = new Date();
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   // published items
   // - don't have draft key set to true
   // - have a date smaller or equal to now
@@ -10,7 +10,7 @@ module.exports = function(eleventyConfig) {
   };
 
   // blogposts collection
-  eleventyConfig.addCollection("blogposts", function(collection) {
+  eleventyConfig.addCollection("blogposts", function (collection) {
     return collection
       .getFilteredByGlob("./src/blogposts/*.md")
       .filter(isPublished)
@@ -18,7 +18,7 @@ module.exports = function(eleventyConfig) {
   });
 
   // team collection
-  eleventyConfig.addCollection("team", function(collection) {
+  eleventyConfig.addCollection("team", function (collection) {
     return collection.getFilteredByGlob("./src/team/*.md").sort((a, b) => {
       let nameA = a.data.surname.toUpperCase();
       let nameB = b.data.surname.toUpperCase();
@@ -29,12 +29,12 @@ module.exports = function(eleventyConfig) {
   });
 
   // limit filter
-  eleventyConfig.addFilter("limit", function(array, limit) {
+  eleventyConfig.addFilter("limit", function (array, limit) {
     return array.slice(0, limit);
   });
 
   // date filter
-  eleventyConfig.addFilter("date", function(date, format, locale) {
+  eleventyConfig.addFilter("date", function (date, format, locale) {
     locale = locale ? locale : "en";
     moment.locale(locale);
     return moment(date).format(format);
@@ -45,12 +45,13 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
   eleventyConfig.addPassthroughCopy("./src/assets/fonts/");
   eleventyConfig.addPassthroughCopy("./src/assets/img/");
+  eleventyConfig.addPassthroughCopy("./src/admin/config.yml");
 
   // override default config
   return {
     dir: {
       input: "./src/",
-      output: "./dist/"
-    }
+      output: "./dist/",
+    },
   };
 };
