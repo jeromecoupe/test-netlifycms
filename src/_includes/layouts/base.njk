@@ -26,6 +26,7 @@
   {% include "partials/mobilemenu.njk" %}
   {% block content %}{% endblock %}
   {% include "partials/footer.njk" %}
+  {% block scripts %}{% endblock %}
   <script src="/assets/js/bundle.min.js?ref={{ site.buildDate | date('X') }}"></script>
 </body>
 </html>
