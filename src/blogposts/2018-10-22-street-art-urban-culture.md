@@ -1,7 +1,9 @@
 ---
-title: "Street art and urban culture"
-intro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloremque dolor magni numquam quod nemo repellendus facilis, veritatis sit voluptatibus ducimus pariatur cum odit reiciendis et sed voluptate iure perferendis."
-image: "gent-streetart.jpg"
+title: Street art and urban culture coucou myriam
+intro: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloremque
+  dolor magni numquam quod nemo repellendus facilis, veritatis sit voluptatibus
+  ducimus pariatur cum odit reiciendis et sed voluptate iure perferendis.
+image: gent-streetart.jpg
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at suscipit orci, nec rutrum arcu. Praesent ut tincidunt dui. Integer elementum nisi sapien, in fermentum metus pretium eget. Aenean lacinia tortor et turpis eleifend porttitor.
 
