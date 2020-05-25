@@ -1,5 +1,6 @@
 const moment = require("moment");
 const now = new Date();
+const path = require("path");
 
 module.exports = function (eleventyConfig) {
   // published items
@@ -26,6 +27,11 @@ module.exports = function (eleventyConfig) {
       if (nameA > nameB) return 1;
       return 0;
     });
+  });
+
+  // get filename
+  eleventyConfig.addFilter("filename", function (filePath) {
+    return path.basename(filePath);
   });
 
   // limit filter
