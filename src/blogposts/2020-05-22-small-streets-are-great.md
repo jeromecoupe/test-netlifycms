@@ -1,6 +1,6 @@
 ---
 title: Small streets are great
-blogIntro:: small streets are great and fine and dandy
+blogIntro: small streets are great and fine and dandy
 blogImage: /assets/uploads/smallstreet.jpg
 ---
 

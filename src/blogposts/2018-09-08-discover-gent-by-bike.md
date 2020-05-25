@@ -1,6 +1,6 @@
 ---
 title: Discover Gent by bike
-blogIntro::
+blogIntro:
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloremque
   dolor magni numquam quod nemo repellendus facilis, veritatis sit voluptatibus
   ducimus pariatur cum odit reiciendis et sed voluptate iure perferendis.
