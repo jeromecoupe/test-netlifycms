@@ -1,6 +1,6 @@
 ---
 title: "One of the greenest cities in Belgium"
-blogIntro:: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloremque dolor magni numquam quod nemo repellendus facilis, veritatis sit voluptatibus ducimus pariatur cum odit reiciendis et sed voluptate iure perferendis."
+blogIntro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloremque dolor magni numquam quod nemo repellendus facilis, veritatis sit voluptatibus ducimus pariatur cum odit reiciendis et sed voluptate iure perferendis."
 blogImage: "gent-nature.jpg"
 ---
 
