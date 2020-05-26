@@ -11,10 +11,10 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Intro", name: "intro", widget: "string" }
+      - { label: "Intro", name: "blogIntro", widget: "string" }
       - {
           label: "Image",
-          name: "image",
+          name: "blogImage",
           widget: "image",
           allow_multiple: false,
         }
