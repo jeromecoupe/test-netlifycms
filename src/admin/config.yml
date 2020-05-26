@@ -12,12 +12,28 @@ collections:
     media_folder: "{{media_folder}}/blogposts"
     public_folder: "{{public_folder}}/blogposts"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Intro", name: "blogIntro", widget: "string" }
-      - {
+      [
+        {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          required: true,
+          pattern: ["^.{1,128}$", "Maximum 128 characters"],
+        },
+        {
+          label: "Intro",
+          name: "blogIntro",
+          widget: "string",
+          required: true,
+          pattern: ["^.{1,256}$", "Maximum 256 characters"],
+        },
+        {
           label: "Image",
           name: "blogImage",
           widget: "image",
+          required: true,
+          hint: "Image must be 1500x1125 in JPG format",
           allow_multiple: false,
-        }
-      - { label: "Body", name: "body", widget: "markdown" }
+        },
+        { label: "Body", name: "body", widget: "markdown" },
+      ]
