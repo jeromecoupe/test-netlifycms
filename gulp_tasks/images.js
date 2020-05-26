@@ -7,8 +7,8 @@ const sharp = require("sharp");
 // specify transforms
 const transforms = [
   {
-    src: "./src/assets/uploads/*",
-    dist: "./dist/assets/uploads/1200x675/",
+    src: "./src/assets/uploads/blogposts/*",
+    dist: "./dist/assets/uploads/blogposts/1200x675/",
     options: {
       width: 1200,
       height: 675,
@@ -16,8 +16,8 @@ const transforms = [
     },
   },
   {
-    src: "./src/assets/uploads/*",
-    dist: "./dist/assets/uploads/1024x576/",
+    src: "./src/assets/uploads/blogposts/*",
+    dist: "./dist/assets/uploads/blogposts/1024x576/",
     options: {
       width: 1024,
       height: 576,
@@ -25,8 +25,8 @@ const transforms = [
     },
   },
   {
-    src: "./src/assets/uploads/*",
-    dist: "./dist/assets/uploads/800x450/",
+    src: "./src/assets/uploads/blogposts/*",
+    dist: "./dist/assets/uploads/blogposts/800x450/",
     options: {
       width: 800,
       height: 450,
@@ -34,8 +34,17 @@ const transforms = [
     },
   },
   {
-    src: "./src/assets/uploads/*",
-    dist: "./dist/assets/uploads/600x600/",
+    src: "./src/assets/uploads/blogposts/*",
+    dist: "./dist/assets/uploads/blogposts/600x600/",
+    options: {
+      width: 600,
+      height: 600,
+      fit: "cover",
+    },
+  },
+  {
+    src: "./src/assets/uploads/team/*",
+    dist: "./dist/assets/uploads/team/600x600/",
     options: {
       width: 600,
       height: 600,
