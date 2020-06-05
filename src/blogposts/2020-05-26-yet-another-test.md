@@ -6,4 +6,4 @@ blogIntro: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
   hello qzefqzefq dfv vservserv serv qz
 blogImage: /assets/uploads/blogposts/rentree.jpg
 ---
-this is a test
+this is a test for Raphael
